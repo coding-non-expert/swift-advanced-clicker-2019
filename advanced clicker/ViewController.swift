@@ -10,11 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    var counter = 0
+    var time = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
+    
+    @IBAction func tapped(_ sender: Any) {
+        time += 1
+        label.text = "\(counter)"
+        if counter == 30 {
+            print ("done")
+        }
+    }
 
 }
 

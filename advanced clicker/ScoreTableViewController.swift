@@ -10,7 +10,7 @@ import UIKit
 
 class ScoreTableViewController: UITableViewController {
 
-    var scores = ["were", "wete"]
+    var scores: [Float] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,12 +36,23 @@ class ScoreTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scoreCell", for: indexPath)
         cell.textLabel?.text = "\(scores[indexPath.row])"
 
         return cell
     }
     
-    
+    @IBAction func unwindToScores(segue: UIStoryboardSegue) {
+        if segue.identitfier == "unwindToScores" {
+            if let score = segue.source as? ViewController {
+                let score = source.time
+                let scoreAsDouble = Double(round(score * 10)) / 10 //5.499 * 10 = 54.99 => 54.0 / 10 => 5.4
+                scores.append(scoreAsDouble)
+                tableview.reloadData()
+            }
+        }
+        
+    }
     
 
     /*

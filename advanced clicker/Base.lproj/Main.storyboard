@@ -33,9 +33,16 @@
                             <outlet property="delegate" destination="pVp-ev-dmg" id="5Et-vg-EY3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="62W-Km-B9w"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="62W-Km-B9w">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="h0l-ne-fVf">
+                            <connections>
+                                <segue destination="wbO-Ta-rai" kind="unwind" unwindAction="unwindToScoresWithSegue:" id="Gw2-GX-lRG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feO-s9-hJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wbO-Ta-rai" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-638" y="130"/>
         </scene>

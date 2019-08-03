@@ -14,6 +14,7 @@
 		938D33B722F5129F00DD327F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938D33B522F5129F00DD327F /* LaunchScreen.storyboard */; };
 		938D33C222F5129F00DD327F /* advanced_clickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D33C122F5129F00DD327F /* advanced_clickerTests.swift */; };
 		938D33CD22F5129F00DD327F /* advanced_clickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D33CC22F5129F00DD327F /* advanced_clickerUITests.swift */; };
+		938D33DB22F515E800DD327F /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D33DA22F515E800DD327F /* ScoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		938D33C822F5129F00DD327F /* advanced clickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "advanced clickerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		938D33CC22F5129F00DD327F /* advanced_clickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = advanced_clickerUITests.swift; sourceTree = "<group>"; };
 		938D33CE22F5129F00DD327F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938D33DA22F515E800DD327F /* ScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				938D33AC22F5129C00DD327F /* AppDelegate.swift */,
 				938D33AE22F5129C00DD327F /* ViewController.swift */,
 				938D33B022F5129C00DD327F /* Main.storyboard */,
+				938D33DA22F515E800DD327F /* ScoreTableViewController.swift */,
 				938D33B322F5129F00DD327F /* Assets.xcassets */,
 				938D33B522F5129F00DD327F /* LaunchScreen.storyboard */,
 				938D33B822F5129F00DD327F /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				938D33AF22F5129C00DD327F /* ViewController.swift in Sources */,
 				938D33AD22F5129C00DD327F /* AppDelegate.swift in Sources */,
+				938D33DB22F515E800DD327F /* ScoreTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
